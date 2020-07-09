@@ -1,0 +1,12 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: gateway-zuul-demo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    prefer-ip-address: true
