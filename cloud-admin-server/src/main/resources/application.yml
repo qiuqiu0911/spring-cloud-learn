@@ -1,16 +1,6 @@
-server:
-  port: 8888
-
 spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: file:///Users/qiuqiu/dev/config-repo
-
   application:
-    name: cloud-config-server
-
+    name: admin-server
 eureka:
   client:
     service-url:
@@ -18,9 +8,3 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
     prefer-ip-address: true
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'

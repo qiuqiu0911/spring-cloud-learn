@@ -21,3 +21,10 @@ management:
     web:
       exposure:
         include: '*'
+
+
+---
+spring:
+  profiles: dev2
+server:
+  port: 8802

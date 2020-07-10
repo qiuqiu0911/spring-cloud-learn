@@ -20,6 +20,8 @@
         <module>cloud-zuul</module>
         <module>cloud-client-demo</module>
         <module>cloud-config-server</module>
+        <module>cloud-admin-server</module>
+        <module>cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
     <properties>
