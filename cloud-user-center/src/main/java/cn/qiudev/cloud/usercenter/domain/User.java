@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name = "t_uaac_user")
+@Table(name = "user")
 public class User extends BaseEntity {
 
     @Id
