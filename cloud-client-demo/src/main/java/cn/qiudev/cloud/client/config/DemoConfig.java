@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "cloud.client.demo")
 @Getter
 @Setter
+@RefreshScope
 public class DemoConfig {
 
     private String name;
